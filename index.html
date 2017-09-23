@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title> Train Scheduler </title>
+	<link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+</head>
+<body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<div class="head-div panel panel-heading">
+		<div class=jumbotron style="background-color:#808080 !important;">
+			<h1 class=text-center>Train Scheduler</h1>
+			<!-- <h3 class=text-center>The most awesome data management tool you've ever seen!</h3> -->
+		</div>
+	</div>
+
+	<div class="container table-div panel panel-body" style="max-width: 1000;">
+		<table class="table table-bordered table-hover" id=employee-list-table>
+			<th>Train Name</th>
+			<th>Destination</th>
+			<th>Train Time</th>
+			<th>Frequency(Per Day)</th>
+			<th>Time to Arrive (In Minutes)</th>
+		</table>
+	</div>
+
+	<div class="container form-div panel panel-body" style="max-width: 700;">
+		<form id=form-id>
+			<div class=form-group>
+				<label for=employee-name>Train Name:</label>
+				<input type=text id=name-input class=form-control />
+			</div>
+			<div class=form-group>
+				<label for=employee-role>Destination:</label>
+				<input type=text id=dest-input class=form-control />  
+			</div>
+			<div class=form-group>
+				<label for=start-date>Train Time:</label>
+				<input type=text id=time-input class=form-control />
+			</div>
+			<div class=form-group>
+				<label for=monthly-rate>Frequency:</label>
+				<input type=text id=freq-input class=form-control /> <br>	
+			</div>
+			<div class=form-group style="max-width: 200;">
+				<input type=submit id=input-submit class="form-control btn btn-primary" /></input>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
